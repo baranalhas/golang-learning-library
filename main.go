@@ -2,18 +2,34 @@ package main
 
 import (
 	"fmt"
+
 	///"golesson/pointers"
-	"golesson/structs"
+
+	"golesson/interfaces"
+	//"golesson/goroutines"
 )
 
 func main() {
 	fmt.Println("")
-	//structs.Demo1()
-	structs.Demo2()
+
+	interfaces.Demo1()
+	/* thread
+	ciftSayiCn := make(chan int)
+	tekSayiCn := make(chan int)
+	go channels.CiftSayilar(ciftSayiCn)
+	go channels.TekSayilar(tekSayiCn)
+	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+
+
+	fmt.Println("Çarpım: ", ciftSayiToplam*tekSayiToplam)
+
+	*/
 	/*
-		sayilar := []int{1, 2, 3}
-		pointers.Demo2(sayilar)
-		fmt.Println("Maindeki sayı ", sayilar[0])*/
+			//structs.Demo1()
+		structs.Demo2()
+			sayilar := []int{1, 2, 3}
+			pointers.Demo2(sayilar)
+			fmt.Println("Maindeki sayı ", sayilar[0])*/
 
 	/* pointers
 
