@@ -2,12 +2,25 @@ package main
 
 import (
 	"fmt"
-	"golesson/string_functions"
+	"golesson/project"
 )
 
 func main() {
 	fmt.Println("")
-	string_functions.Demo1()
+	/*project.GetAllProducts()
+	project.AddProduct()
+	project.GetAllProducts()*/
+
+	project.AddProduct()
+
+	products, _ := project.GetAllProducts()
+
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].ProductName)
+	}
+
+	//restful.Demo2()
+	//string_functions.Demo1()
 	//fmt.Println(error_handling.TahminEt2(102))
 	//interfaces.Demo3()
 	//defer_statement.B()
