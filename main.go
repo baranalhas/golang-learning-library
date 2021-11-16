@@ -2,17 +2,20 @@ package main
 
 import (
 	"fmt"
-
-	///"golesson/pointers"
-
-	"golesson/interfaces"
-	//"golesson/goroutines"
+	"golesson/string_functions"
 )
 
 func main() {
 	fmt.Println("")
+	string_functions.Demo1()
+	//fmt.Println(error_handling.TahminEt2(102))
+	//interfaces.Demo3()
+	//defer_statement.B()
+	//defer_statement.Test()
+	//defer_statement.Demo3()
 
-	interfaces.Demo1()
+	//interfaces.Demo2()
+	//
 	/* thread
 	ciftSayiCn := make(chan int)
 	tekSayiCn := make(chan int)
